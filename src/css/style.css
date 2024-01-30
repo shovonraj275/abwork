@@ -7,6 +7,11 @@ body{
 h1{
    
 }
+.border{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
 .border h1{
      text-align: center;
     font-size: 50px;
@@ -22,23 +27,39 @@ h1{
     top: 30px;
     left: 13px;
 }
+
 .border h1::after{
     content: "";
-    width: 27%;
+    width: 22%;
     height: 2px;
     background: #000;
     position: absolute;
     top: 30px;
-    right: 6px;
+    right: 62px;
 }
-.border_01::before {
+
+.border_01{
+    position: relative;
+    width: 1%;
+}
+
+.border_01::before{
     content: "";
     width: 2px;
-    height: 15%;
-    background: #000;
+    height: 150px;
+    background-color: #000;
     position: absolute;
-    top: 64px;
-    right: 6px;
+    right: -15px;
+    top: 31px;
+}
+.border_01::after{
+    content: "";
+    width: 2px;
+    height: 150px;
+    background-color: #000;
+    position: absolute;
+    left: 1300px;
+    top: 31px;
 }
 .flex_container{
     display: flex;
@@ -62,4 +83,38 @@ h1{
 .price{
     text-align: center;
     font-size: 20px;
+}
+h3{
+    position: relative;
+}
+h3::after{
+    content: "";
+    height: 2px;
+    width: 93.8%;
+    background-color: #000;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+}
+.border_02{
+    position: relative;
+    margin: auto;
+}
+.border_02::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 150px;
+    background-color: #000;
+    left: 25px;
+    top: -161px;
+}
+.border_02::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 150px;
+    background-color: #000;
+    left: 1304px;
+    top: -161px;
 }
